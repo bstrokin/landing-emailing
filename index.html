@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <script defer src="script.js"></script>
+    <title>Intégration</title>
+</head>
+<body>
+    <nav>
+        <article class="up-nav-container">
+            <div class="up-nav-user">
+                <p>Vladimir Charpentier</p>
+                <span class="up-nav-icon" id="user-icon"></span>
+            </div>
+            <span class="up-nav-icon" id="profil"></span>
+            <span class="up-nav-icon" id="circle"></span>
+        </article>
+        <main class="navigation-mobile">
+            <ul>
+                <li onclick="toggleBurger()" class="burger-icon">
+                    <ul class="navigation-mobile-container display-no">
+                        <button  class="navigation-mobile-close">X</button>
+                        <li>Accueil</li>
+                        <li>Notre école</li>
+                        <li>Nos formations</li>
+                        <li>Inscription en ligne</li>
+                        <li>Contact</li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+        <main class="navigation-desktop">
+                <a href="#">Accueil</a>
+                <a href="#">Notre école</a>
+                <a href="#">Nos formations</a>
+                <a href="#">Inscription en ligne</a>
+        </main>
+    </nav>
+
+    <section class="container">
+        <div class="text-container">
+            <h1>C'est le moment de se décider !</h1>
+            <p>L'année touche à sa fin, les étudiants doivent désormais choisir leur spécialité pour l'année prochaine.</p>
+            <p class="confirmation">CIVILITE PRENOM NOM, nous avons bien pris en compte votre demande pour la spécialité SPECIALITE, vous
+                recevrez une réponse sur l’adresse MAIL. Merci de votre confiance.</p>
+        </div>
+        <div class="specialities-container">
+            <article id="dev" onclick="showPopup(rouge)" class="specialities"><h3>Développement</h3></article>
+            <article id="design" onclick="showPopup(bleu)" class="specialities"><h3>Design</h3></article>
+            <article id="market" onclick="showPopup(jaune)" class="specialities"><h3>Marketing</h3></article>
+        </div>
+    </section>
+
+    <section class="popup-wrapper">
+        <div class="popup-container">
+            <p onclick="closePopup()" id="close-popup">X Fermer la popup</p>
+        </div>
+            
+    </section>
+
+    <footer><a href="tel:+331234567890">01 23 45 67 89 00</a></footer>
+</body>
+</html>

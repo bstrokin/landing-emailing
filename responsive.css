@@ -1,0 +1,22 @@
+@media screen and (min-width: 600px){
+    .navigation-mobile{
+        display: none;
+    }
+    
+    .navigation-desktop{
+        display: flex;
+    }
+    .specialities{
+        max-width: calc(33.3% - 30px);
+        margin: 15px;
+    }
+
+
+    .text-container{
+        margin-top: 15px;
+    }
+
+    footer{
+        display: none;
+    }
+}
